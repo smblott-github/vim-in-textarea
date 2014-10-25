@@ -129,7 +129,7 @@ function VIM(ctrees) {
     var pass_keys
     if ('<Escape>' === c) {
       this.reset()
-      pass_keys = false
+      pass_keys = this.is_mode(COMMAND)
     }
     else if ( this.is_mode(INSERT) ) {
       if (c === '<Enter>') {
